@@ -15,4 +15,4 @@ This is an extremely small docker image with `Oracle JRE 8` based on `Alpine`.
     - `docker pull shuaicj/java:8.131.11`
 
 #### Usage
-`docker run --rm -v $(pwd):/app -w /app shuaicj/java sh -c "java -jar your-jar-file"`
+`docker run --rm -v $(pwd):/app -w /app shuaicj/java java -jar your-jar-file`

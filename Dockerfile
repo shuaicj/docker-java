@@ -1,11 +1,11 @@
 FROM frolvlad/alpine-glibc:alpine-3.6
 MAINTAINER shuaicj <shuaicj@gmail.com>
 
-ENV JAVA_VERSION_MAJOR 8
-ENV JAVA_VERSION_MINOR 131
-ENV JAVA_VERSION_PATCH 11
-ENV JAVA_HOME /jre
-ENV PATH ${PATH}:/jre/bin
+ENV JAVA_VERSION_MAJOR=8 \
+    JAVA_VERSION_MINOR=131 \
+    JAVA_VERSION_PATCH=11 \
+    JAVA_HOME=/jre \
+    PATH=${PATH}:/jre/bin
 
 RUN apk add --update curl ca-certificates && \
     cd /tmp && \
