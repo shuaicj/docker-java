@@ -4,14 +4,14 @@
 ## Minimal Docker image with OpenJDK JRE 8
 
 This is an extremely small docker image with `OpenJDK JRE 8` based on `Alpine`. 
-- The image size on dockerhub is 46M while compressed, and 119M while uncompressed.
+- The image size is 82M after pull. Check it by `docker images`.
 - [Curl](https://curl.haxx.se) is included because it's convenient for docker healthcheck.
 
 #### Pull
 - for latest
     - `docker pull shuaicj/java`
 - for stable
-    - `docker pull shuaicj/java:8.152.12`
+    - `docker pull shuaicj/java:8.131.11`
 
 #### Usage
 `docker run --rm -v $(pwd):/app -w /app shuaicj/java java -jar your-jar-file`
